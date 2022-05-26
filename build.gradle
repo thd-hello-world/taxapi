@@ -1,0 +1,38 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.5.RELEASE'
+	}
+	repositories {
+		maven { url "https://maven.artifactory.homedepot.com/artifactory/libs-release" }
+		maven { url "https://maven.artifactory.homedepot.com/artifactory/libs-snapshot" }
+		maven { url "https://maven.artifactory.homedepot.com/artifactory/plugins-release" }
+		maven { url "https://maven.artifactory.homedepot.com/artifactory/spring-milestone" }
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.pairing.interview.backend'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+	maven { url "https://maven.artifactory.homedepot.com/artifactory/libs-release" }
+	maven { url "https://maven.artifactory.homedepot.com/artifactory/libs-snapshot" }
+	maven { url "https://maven.artifactory.homedepot.com/artifactory/plugins-release" }
+	maven { url "https://maven.artifactory.homedepot.com/artifactory/spring-milestone" }
+}
+
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	compileOnly('org.projectlombok:lombok')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	implementation('com.fasterxml.jackson.dataformat:jackson-dataformat-xml')
+}

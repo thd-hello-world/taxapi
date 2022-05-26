@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "cf999792-1f86-4bdc-9568-ec5d7eba1e92",
+		"name": "Pairing Interviews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Atlanta Tax",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"invoice\": {\n    \"price\": 100,\n    \"quantity\": 1,\n    \"zipCode\": \"30339\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hephzibah Tax",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"invoice\": {\n    \"price\": 100,\n    \"quantity\": 1,\n    \"zipCode\": \"30815\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rome Tax",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"invoice\": {\n    \"price\": 100,\n    \"quantity\": 1,\n    \"zipCode\": \"30149\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Default",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"invoice\": {\n    \"price\": 100,\n    \"quantity\": 1,\n    \"zipCode\": \"30080\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
